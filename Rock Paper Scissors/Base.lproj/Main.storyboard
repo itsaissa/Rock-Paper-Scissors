@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -114,7 +114,10 @@
                         <outlet property="cpuRoundLabel" destination="mbj-2C-LBI" id="1eL-P2-bg6"/>
                         <outlet property="cpuSetLabel" destination="LKs-HL-mdN" id="tSl-In-zkg"/>
                         <outlet property="headerLabel" destination="Ini-ur-16y" id="7Uu-Wz-a90"/>
+                        <outlet property="paperButton" destination="WaY-in-Hq5" id="ShG-jT-XM9"/>
                         <outlet property="retryButton" destination="7Sn-mg-7bp" id="ait-GV-V2X"/>
+                        <outlet property="rockButton" destination="zTj-ym-b7E" id="bIY-n3-5vZ"/>
+                        <outlet property="scissorsButton" destination="Mc5-hR-5CP" id="NFr-gA-JfP"/>
                         <outlet property="textLabel" destination="gar-k5-0XI" id="yg2-TK-BJz"/>
                         <outlet property="userImageView" destination="hit-7u-Yrp" id="9ts-Wt-glm"/>
                         <outlet property="userRoundLabel" destination="5dn-Tw-L8R" id="bWF-OS-hsU"/>

@@ -8,7 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var rockButton: UIButton!
+    @IBOutlet weak var paperButton: UIButton!
+    @IBOutlet weak var scissorsButton: UIButton!
+    
+    
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var userImageView: UIImageView!
@@ -180,10 +185,10 @@ class ViewController: UIViewController {
                 didCPUWin = false
                 winLabel.isHidden = false
                 winLabel.text = winnerText()
-                
                 //make the rock, paper, and scissors buttons not work
-                
-                
+                rockButton.isEnabled = false;
+                paperButton.isEnabled = false;
+                scissorsButton.isEnabled = false;
                 //Make the retry button appear, and make it restart the match
                 retryButton.isHidden = false
             }
@@ -212,7 +217,9 @@ class ViewController: UIViewController {
                 winLabel.isHidden = false
                 winLabel.text = winnerText()
                 //make the rock, paper, and scissors buttons not work
-                
+                rockButton.isEnabled = false;
+                paperButton.isEnabled = false;
+                scissorsButton.isEnabled = false;
                 
                 //Make the retry button appear, and make it restart the match
                 retryButton.isHidden = false
@@ -243,6 +250,19 @@ class ViewController: UIViewController {
     @IBAction func retryGame(_ sender: Any) {
         viewDidLoad()
         headerLabel.isHidden = false
+        rockButton.isEnabled = true;
+        paperButton.isEnabled = true;
+        scissorsButton.isEnabled = true;
+        userRoundInt = 0
+        userSetInt = 0
+        cpuRoundInt = 0
+        cpuSetInt = 0
+        userStreak = 0
+        cpuStreak = 0
+        userRoundLabel.text = String(userRoundInt)
+        userSetLabel.text = String(userSetInt)
+        cpuRoundLabel.text = String(cpuRoundInt)
+        cpuSetLabel.text = String(cpuSetInt)
     }
     
     
